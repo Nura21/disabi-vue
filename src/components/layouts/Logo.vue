@@ -1,11 +1,11 @@
 <script setup>
-import { RouterLink } from 'vue-router'
+import { RouterLink } from "vue-router";
 </script>
 
 <template>
   <div>
-    <RouterLink to="/" class="flex items-center">
-      <img src="@/assets/img/logo.svg" class="h-8 ml-3 sm:ml-0 sm:h-8" alt="Rahmad Logo" />
-    </RouterLink>
+    <div class="pt-[40px] h-40 w-40">
+      <img src="@/assets/img/logo.png" alt="" />
+    </div>
   </div>
 </template>

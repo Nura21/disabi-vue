@@ -3,47 +3,37 @@ import { RouterLink } from "vue-router";
 </script>
 
 <template>
-  <div
-    class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
-    id="mobile-menu-2">
-    <ul
-      class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-regular">
-      <li>
+  <nav
+    id="nav-menu"
+    class="hidden absolute py-5 shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:rounded-none lg:shadow-none xl:block xl:static xl:bg-transparent xl:max-w-full xl:rounded-none xl:shadow-none">
+    <ul class="block lg:flex xl:flex">
+      <li class="group">
         <RouterLink
-          to="/"
-          class="block py-2 pl-3 pr-4 text-white bg-indigo-600 rounded md:bg-transparent md:text-indigo-600 md:p-0 dark:text-white"
-          aria-current="page"
+          to="/home"
+          class="font-poppins text-white font-medium mx-8 group-hover:text-slate-400"
           >Home
         </RouterLink>
       </li>
-      <li>
+      <li class="group">
         <RouterLink
-          to="/categories"
-          class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-indigo-600 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
-          Categories</RouterLink
+          to="/our-product"
+          class="font-poppins text-white font-medium mx-8 group-hover:text-slate-400">
+          Our Product</RouterLink
         >
       </li>
-      <li>
-        <RouterLink
-          to="/item"
-          class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-indigo-600 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
-          Item</RouterLink
-        >
-      </li>
-      <li>
-        <RouterLink
-          to="/pricing"
-          class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-indigo-600 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
-          Pricing</RouterLink
-        >
-      </li>
-      <li>
+      <li class="group">
         <RouterLink
           to="/about"
-          class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-indigo-600 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+          class="font-poppins text-white font-medium mx-8 group-hover:text-slate-400">
           About</RouterLink
         >
       </li>
+      <li class="group -mt-3 px-9" />
+      <button
+        href=""
+        class="py-3 px-4 font-poppins text-white font-semibold text-base rounded-xl shadow-sm bg-primary tracking-normal">
+        Donate Now
+      </button>
     </ul>
-  </div>
+  </nav>
 </template>
