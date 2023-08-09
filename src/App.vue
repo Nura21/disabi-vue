@@ -6,8 +6,9 @@ import LandingPage from "./views/LandingPageView.vue";
 
 <template>
   <header>
-    <div class="wrapper"></div>
-    <LandingPage />
+    <div class="wrapper">
+      <LandingPage />
+    </div>
     <RouterView />
   </header>
 </template>
