@@ -2,7 +2,7 @@
 
 <template>
   <section>
-    <div class="mt-10 max-w-full h-[300px] bg-gray-dark">
+    <div class="mt-10 max-w-full h-[300px] bg-gray-dark">  
       <div class="container">
         <div class="pt-[40px] h-40 w-40">
           <img src="@/assets/img/logo.png" alt="logo disabi" />
